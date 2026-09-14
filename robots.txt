@@ -1,0 +1,6 @@
+# robots.txt for Suman Beauty Salon & Academy
+User-agent: *
+Allow: /
+
+# Sitemap Index
+Sitemap: https://sumanbeautysalonacademy.in/sitemap.xml

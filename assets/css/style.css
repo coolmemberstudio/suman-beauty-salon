@@ -2162,3 +2162,100 @@ footer.site-footer {
     width: 290px;
   }
 }
+
+/* ================= HERO BRAND SEO HEADING ================= */
+.hero-title .hero-brand-name {
+  display: block;
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-600);
+  margin-bottom: 8px;
+}
+
+/* ================= FAQ SECTION STYLES ================= */
+.faq-container {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+}
+
+.faq-item:hover {
+  border-color: var(--border-gold);
+  box-shadow: var(--shadow-md);
+}
+
+.faq-item[open] {
+  border-color: var(--gold-500);
+  box-shadow: var(--shadow-md);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--plum-900);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--plum-50);
+  color: var(--plum-700);
+  font-size: 1.2rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+  background: var(--gold-100);
+  color: var(--gold-700);
+}
+
+.faq-answer {
+  padding: 0 24px 20px 24px;
+  color: var(--text-body);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.faq-answer a {
+  color: var(--plum-700);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.faq-answer a:hover {
+  color: var(--gold-600);
+}
+
